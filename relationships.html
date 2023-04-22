@@ -16,10 +16,11 @@
     
     /* Add a gray background color and some padding to the footer */
     footer {
-      position: absolute;
+      position: fixed;
       background-color: #f2f2f2;
       padding: 25px;
-      bottom: -100;
+      bottom: 0px;
+      left: 0px;
       width: 100%;
     }
 
@@ -129,7 +130,7 @@
 
 <div class="container-fluid bg-3 text-center">     
   <h3>GALLERY</h3>
-  <h5>Relationships</h5><br>
+  <h4>Relationships</h4><br>
   <div class="row">
     <div class="col-sm-3">
       <!-- <p>Some text..</p>  -->
@@ -176,6 +177,7 @@
 
 <!-- Img01-->
 <div id="modal01" class="modal"><!--modal name should be specific-->
+  <span class="close">&times;</span><!--span should be at the last division.-->
   <img class="modal-content" id="img01"><!--id should be specific but not the same as the image lower case imgxx-->
   <!-- <div id="caption"></div>   -->
 </div>
