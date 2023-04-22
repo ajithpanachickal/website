@@ -1,0 +1,274 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ajith Panachickal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      position: absolute;
+      background-color: #f2f2f2;
+      padding: 25px;
+      bottom: -100;
+      width: 100%;
+    }
+
+     /* Style the Image Used to Trigger the Modal */
+#Img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#Img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+} 
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">AJITH PANACHICKAL</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-3 text-center">     
+  <h3>GALLERY</h3>
+  <h5>Relationships</h5><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <!-- <p>Some text..</p>  -->
+      <img id="Img01" src="https://drive.google.com/uc?export=view&id=1igJAtB98rdYboI-qC0NPz1jYY1ZljXTx" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <!-- <p>Some text..</p> -->
+      <img id="Img02" src="https://drive.google.com/uc?export=view&id=104iEUEsTSc4CH3e99UdF_hzf-go73RzZ" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <!-- <p>Some text..</p> -->
+      <img id="Img03" src="https://drive.google.com/uc?export=view&id=1bAJ8s0yuLQDb-ZTduEE1liYN_vcYfmKK" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <!-- <p>Some text..</p> -->
+      <img id="Img04" src="https://drive.google.com/uc?export=view&id=16D0F1Il2OS_Z_43crzJ2QdE_sFpH6bQE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div> <br>
+  
+<br><br>
+<footer class="container-fluid text-center">
+  <p>Ajith Panachickal, Website by A3 Creation studio<p>
+  <p>Copyright © All rights reserved 2023</p>
+</footer>
+
+
+<!-- Img04-->
+<div id="modal04" class="modal"><!--modal name should be specific-->
+  <img class="modal-content" id="img04"><!--id should be specific but not the same as the image lower case imgxx-->
+  <!-- <div id="caption"></div>   -->
+</div>
+
+<!-- Img03-->
+<div id="modal03" class="modal"><!--modal name should be specific-->
+  <img class="modal-content" id="img03"><!--id should be specific but not the same as the image lower case imgxx-->
+  <!-- <div id="caption"></div>   -->
+</div>
+
+<!-- Img02-->
+<div id="modal02" class="modal"><!--modal name should be specific-->
+  <img class="modal-content" id="img02"><!--id should be specific but not the same as the image lower case imgxx-->
+  <!-- <div id="caption"></div>   -->
+</div>
+
+<!-- Img01-->
+<div id="modal01" class="modal"><!--modal name should be specific-->
+  <img class="modal-content" id="img01"><!--id should be specific but not the same as the image lower case imgxx-->
+  <!-- <div id="caption"></div>   -->
+</div>
+
+<!-- Img04-->
+<script>
+// Get the modal
+var modal = document.getElementById("modal04");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("Img04");//id of the image
+var modalImg = document.getElementById("img04");// id in the modal-content
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<!-- Img03-->
+<script>
+// Get the modal
+var modal = document.getElementById("modal03");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("Img03");//id of the image
+var modalImg = document.getElementById("img03");// id in the modal-content
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<!-- Img02-->
+<script>
+// Get the modal
+var modal = document.getElementById("modal02");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("Img02");//id of the image
+var modalImg = document.getElementById("img02");// id in the modal-content
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+<!-- Img01--> <!-- This section should always comes last for closing to happen-->
+<script>
+// Get the modal
+var modal = document.getElementById("modal01");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("Img01");//id of the image
+var modalImg = document.getElementById("img01");// id in the modal-content
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
